@@ -1,0 +1,300 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    position: fixed;
+    z-index: 10;
+    list-style: none;
+    background: #22438C;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    font-family: "cutesy";
+    color: floralwhite;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 1000px;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #112c66;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+@font-face {
+    font-family: "cutesy";
+    src: url(Flowers\ Kingdom.ttf);
+}
+
+
+.full-screen-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0; 
+}
+
+.sdgs-section {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+.sdgs-section h1 {
+    color: crimson;
+    font-family: "cutesy";
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.sdgs-section p {
+    color: white;
+    background-color: crimson;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.image-widget {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-widget h2 {
+    color: #22438C;
+    font-size: 30px;
+    font-family: "cutesy";
+    margin-bottom: 15px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid #22438C;
+    border-radius: 10px;
+}
+
+.interactive-image {
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.interactive-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.image-container {
+    border: none;
+}
+.rounded-image-section {
+    background-color: yellow;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rounded-image-section h2 {
+    color: #22438C;
+    font-family: "cutesy";
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animated-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+.rounded-rectangle-section {
+    background-color: yellow;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rounded-rectangle-section h2 {
+    color: #22438C;
+    font-family: "cutesy";
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curved-image {
+    width: 200px;
+    height: 120px; 
+    border-radius: 15px; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.curved-image:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.rounded-rectangle-section {
+    background-color:#ffc233;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rounded-rectangle-section h2 {
+    color: #22438C;
+    font-family: "cutesy";
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.curved-image {
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.curved-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.large-image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.img {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.large-curved-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.large-curved-image:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px; 
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img:hover .image-text {
+    opacity: 1; 
+}
+
+.rounded-rectangle-section h2 {
+    color: #22438C;
+    font-family: "cutesy";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rounded-rectangle-section .description {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+} 
+.footer{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.footer img{
+    width: 100%;
+    height:fit-content;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+}
